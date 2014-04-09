@@ -1,0 +1,4 @@
+language: python
+install: "pip install unirest"
+script:
+  - python dfcapi/test/test_dfcapi.py

@@ -1,0 +1,9 @@
+.project
+.pydevproject
+*.pyc
+********.swp
+.DS_Store
+dist
+MANIFEST
+*.pyc
+*.egg-info
