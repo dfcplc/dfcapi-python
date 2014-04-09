@@ -19,17 +19,35 @@ api_url_createDirectDebit = 'http://api.debitfinance.co.uk/app/setupdd'
 api_url_updateDirectDebit = 'http://api.debitfinance.co.uk/app/updatedd'
 api_url_cancelDirectDebit = 'http://api.debitfinance.co.uk/app/canceldd'
 
-
-api_url_checkkey          = 'http://httpbin.org/get'
-api_url_viewdd 		      = 'http://httpbin.org/get'
-api_url_viewdd_breakdown  = 'http://httpbin.org/get'
-api_url_createDirectDebit = 'http://httpbin.org/post'
-api_url_updateDirectDebit = 'http://httpbin.org/post'
-api_url_cancelDirectDebit = 'http://httpbin.org/post'
-
 #class dfcapi:
 
-#  CHECKKEY
+
+#setCheckKeyUrl
+def setCheckKeyUrl(checkkey_url):
+	global api_url_checkkey 
+	api_url_checkkey = checkkey_url
+#setCheckKeyUrl
+def setViewDirectDebitUrl(viewdd_url):
+	global api_url_viewdd
+	api_url_viewdd = viewdd_url
+#setCheckKeyUrl
+def setViewDirectDebitBreakdownUrl(viewdd_bd_url):
+	global api_url_viewdd_breakdown
+	api_url_viewdd_breakdown = viewdd_bd_url
+#setCheckKeyUrl
+def setCreateDirectDebitUrl(setupdd):
+	global api_url_createDirectDebit
+	api_url_createDirectDebit = setupdd
+#setCheckKeyUrl
+def setUpdateDirectDebitUrl(updatedd):
+	global api_url_updateDirectDebit
+	api_url_updateDirectDebit = updatedd
+#setCheckKeyUrl
+def setCancelDirectDebitUrl(cancelldd):
+	global api_url_cancelDirectDebit
+	api_url_cancelDirectDebit = cancelldd
+
+#  Checkey
 def checkApiKey(api_key,api_secret):
 	response = unirest.get(api_url_checkkey, auth=(api_key,api_secret))
 	return response
