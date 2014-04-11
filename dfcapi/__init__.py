@@ -12,12 +12,12 @@ from pprint import pprint
 from array import *
 import json
 
-api_url_checkkey          = 'http://api.debitfinance.co.uk/app/checkkey'
-api_url_viewdd 		      = 'http://api.debitfinance.co.uk/app/viewdd'
-api_url_viewdd_breakdown  = 'http://api.debitfinance.co.uk/app/viewddbreakdown'
-api_url_createDirectDebit = 'http://api.debitfinance.co.uk/app/setupdd'
-api_url_updateDirectDebit = 'http://api.debitfinance.co.uk/app/updatedd'
-api_url_cancelDirectDebit = 'http://api.debitfinance.co.uk/app/canceldd'
+api_url_checkkey          = 'https://api.debitfinance.co.uk/checkkey'
+api_url_viewdd 		      = 'https://api.debitfinance.co.uk/viewdd'
+api_url_viewdd_breakdown  = 'https://api.debitfinance.co.uk/viewddbreakdown'
+api_url_createDirectDebit = 'https://api.debitfinance.co.uk/setupdd'
+api_url_updateDirectDebit = 'https://api.debitfinance.co.uk/updatedd'
+api_url_cancelDirectDebit = 'https://api.debitfinance.co.uk/canceldd'
 
 #class dfcapi:
 
